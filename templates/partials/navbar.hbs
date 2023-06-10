@@ -1,0 +1,51 @@
+
+    <header class="sticky top-0 z-10">
+    <nav class="flex flex-wrap items-center justify-between  max-w-screen-2xl mx-auto border border-b-2 py-4 md:py-0 px-4 text-lg text-gray-700 bg-white">
+      <div>
+        <img src="./logo/logo-no-background.svg" class="max-w-[10vw] my-auto max-h-[10vh] ml-[15%]" alt="" />
+
+      </div>
+
+      <div id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <img src="navbar_icons/hamburger_icon.svg" alt="">
+
+      </div>
+
+      <div class="hidden w-full pl-6 md:flex md:items-center md:w-auto" id="menu">
+        <ul class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0  ">
+          <li>
+            <a class="md:p-4 py-2 block hover:text-[#DA0037]" href="/developers">FOR DEVELOPERS</a>
+          </li>
+          <li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-[#DA0037]" href="/">FOR STUDENTS</a>
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-[#DA0037]" href="/index">HOME</a>
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-[#DA0037]" href="/about">ABOUT US</a>
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-[#DA0037]" href="/courses">COURSES</a>
+          </li>
+          
+          <li>
+            <a class="md:p-4 py-2 block hover:text-[#DA0037] " href="/contactUs">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+     <script>
+    const button = document.querySelector("#menu-button");
+    const menu = document.querySelector("#menu");
+
+    button.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+
+ 

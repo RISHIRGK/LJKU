@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Login</title>
+  </head>
+  <body class="box-border inset-0">
+    {{>navbar}}
+    <div
+      class="w-[100vw] h-screen flex flex-col md:flex-row max-w-screen-2xl mx-auto bg-gray-100"
+    >
+      <div
+        class="w-[100%] md:w-[50%] h-[100%] flex justify-center items-center"
+      >
+        <div
+          class="ring-1 ring-black rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 w-fit h-auto scale-[1.6]"
+        >
+          <div class="flex flex-col justify-center items-center p-3">
+            <div>
+              <p class="font-extrabold">
+                <span class="text-red-600">S</span>tudents L<span
+                  class="text-red-600"
+                  >og</span
+                >in
+              </p>
+            </div>
+            <form class="m-4" action="/forStudents" method="post">
+              <div class="flex flex-col gap-5 justify-center items-center">
+                <div>
+                  <select
+                    class="px-2 bg-gray-200 text-black font-bold rounded-full min-w-[180px] text-center  "
+                    name="DIV"
+                    id=""
+                  >
+                    <option value="none" selected disabled hidden>
+                      --select the division--
+                    </option>
+                    <option value="C1">C1</option>
+                    <option value="C2">C2</option>
+                    <option value="C3">C3</option>
+                    <option value="C4">C4</option>
+                    <option value="C5">C5</option>
+                    <option value="C6">C6</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="A3">A3</option>
+                    <option value="A4">A4</option>
+                    <option value="A5">A5</option>
+                    <option value="A6">A6</option>
+                    <option value="A7">A7</option>
+                    <option value="A8">A8</option>
+                    <option value="A9">A9</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="B3">B3</option>
+                    <option value="B4">B4</option>
+                    <option value="B5">B5</option>
+                    <option value="B6">B6</option>
+                    <option value="B7">B7</option>
+                    <option value="B8">B8</option>
+                    <option value="B9">B9</option>
+                    <option value="B10">B10</option>
+                  </select>
+                </div>
+                <div>
+                  <input
+                    class="rounded-full bg-gray-200 font-bold text-black min-w-[120px] text-center"
+                    type="number"
+                    placeholder="sem-4 ROLL NO"
+                    name="ROLL_NO"
+                  />
+                </div>
+                <div>
+                  <button
+                    type="submit"
+                    class="bg-black text-red-600 rounded-full p-2 font-extrabold"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-[100%] md:w-[50%] hidden md:flex md:flex-col h-[100%] justify-center items-center"
+      >
+        <img src="./logo/logo-no-background.svg" class="w-[70%]" />
+      </div>
+    </div>
+    {{>footer}}
+  </body>
+</html>

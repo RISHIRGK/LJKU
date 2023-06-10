@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    <script>
+    const button = document.querySelector("#menu-button");
+    const menu = document.querySelector("#menu");
+
+    button.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+  <div class=" relative max-w-screen-2xl mx-auto">
+    <img src="./images/a.png" alt="" class="w-full mx-auto max-h-[70vh] blur-[4px]   ">
+    <div class="absolute inset-0 flex items-center justify-center ">
+      <h1 class="text-white   text-[clamp(.1rem,.1rem+2.1vw,3.4rem)] font-bold tracking-[0.5em] 3">UNIVERSITY <span
+          class="text-red-700">WITH</span>
+        DIFFERENCE</h1>
+    </div>
+  </div>
+ 
+  <div>
+    <nav class="  max-w-screen-2xl mx-auto    min-h-[20vh] bg-[white] grid grid-cols-4   items-center justify-items-center">
+      <div class=" text-black  px-4 my-4 pt-2">
+        <p class="text-center text-[#DA0037] text-[clamp(1.5rem,1.5rem+.1vw,3rem)]  font-bold  " id="institutes">19</p>
+        <p class="text-center text-black font-extrabold text-l  ">INSTITUTES</p>
+      </div>
+      <div class=" text-black  px-4 pt-2 my-4">
+        <p class="text-center text-[#DA0037] text-[clamp(1.5rem,1.5rem+.1vw,3rem)] font-bold " id="courses">55</p>
+        <p class="text-center text-black text-l font-extrabold ">COURSES</p>
+      </div>
+      <div class=" text-black  px-4 pt-2 my-4 ">
+        <p class="text-center text-[#DA0037] text-[clamp(1.5rem,1.5rem+.1vw,3rem)] font-bold " id="hr">1000+</p>
+        <p class="text-center text-black font-[clamp(800,800+70,900)]  text-l ">HUMAN RESOURCES
+        </p>
+
+      </div>
+      <div class=" text-black  px-4 pt-2 my-4">
+        <p class="text-center text-[#DA0037] text-[clamp(1.5rem,1.5rem+.1vw,3rem)] font-bold " id="students">50000</p>
+        <p class="text-center text-black font-[clamp(800,800+70,900)]  text-l ">STUDENTS SINCE
+          1982</p>
+
+      </div>
+    </nav>
+    <script>
+      let a1 = 0;
+      const delay1 = 70;
+      let a2 = 0;
+      const delay2 = 50;
+      let a3 = 0;
+      const delay3 = 30;
+      let a4 = 0;
+      const delay4 = 0;
+
+      const interval1 = setInterval(fun1, delay1);
+      const interval2 = setInterval(fun2, delay2);
+      const interval3 = setInterval(fun3, delay3);
+      const interval4 = setInterval(fun4, delay4);
+      function fun1() {
+        a1 += 1;
+        document.getElementById("institutes").innerHTML = a1;
+        if (a1 == 19) {
+          clearInterval(interval1);
+        }
+      }
+      function fun2() {
+        a2 += 1;
+        document.getElementById("courses").innerHTML = a2;
+        if (a2 == 55) {
+          clearInterval(interval2);
+        }
+      }
+      function fun3() {
+        a3 += 10;
+        document.getElementById("hr").innerHTML = a3 + "+";
+        if (a3 == 1000) {
+          clearInterval(interval3);
+        }
+      }
+      function fun4() {
+        a4 += 100;
+        document.getElementById("students").innerHTML = a4 + "+";
+        if (a4 == 50000) {
+          clearInterval(interval4);
+        }
+      }
+
+
+    </script>
+  </div>
+  <!-- news/event -->
+     <div class="bg-gray-50  min-h-[70rem] max-w-screen-2xl mx-auto  lg:p-20 ">
+      <div class="w-full text-center mb-20 text-xl font-extrabold">
+        LATEST EVENTS AND NEWS
+      </div>
+      <div class=" flex flex-col md:flex-col  md:relative z-0 m-10">
+        <div class="md:sticky bottom-[2.5rem] z-[150] mb-10">
+          <div class="flex flex-col max-w-3/4 md:flex-row md:max-w-4/5 mx-auto bg-white my-10 shadow-lg rounded-md ">
+            <div class="basis-1/2 md:basis-1/3 flex flex-row">
+
+                <img src="all_photos/carpediem.jpeg" class=" rounded-md xl:shadow-xl object-cover lg:object-contain  xl:shadow-red-500  md:my-5 md:mx-2 w-full h-auto " alt="" srcset="">
+            </div>
+            <div class="basis-1/2 md:basis-2/3 pl-10 overflow-hidden ">
+                <div class="flex flex-col p-8 mt-20 ">
+                    <div class="flex w-full flex-row items-center justify-start rounded-full pt-4 ">
+                        <div class="flex  md:flex-row items-center w-[10rem] rounded-full shadow-md  shadow-red-400 bg-red-300 p-[.52rem]">
+                            <div
+                                class="  flex justify-center rounded-full w-[1.5rem] h-[1.5rem] bg-red-600 p-[1.4rem]  items-center text-white   text-center">
+                                6</div>
+                            <div class=" ml-2 text-red-600 ">APR 2023</div>
+                        </div>
+                    </div>
+                    <h5 class="my-8 text-xl  text-black  font-bold  ">CARPEDIEMFOOD FEST</h5>
+                    <p class="mb-4 text-base text-black   "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam quas atque id ut, qui provident! Aspernatur nulla nam exercitationem minus voluptatibus, consequatur blanditiis, quisquam laudantium ipsam eaque architecto, earum sit quae? Esse maxime sint accusantium. Libero, quidem similique at illum quia consectetur sequi, atque officia deleniti accusamus quo voluptas!
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="md:sticky bottom-[2.5rem] z-[95] mb-10">
+          <div class="flex flex-col max-w-3/4 md:flex-row md:max-w-4/5 mx-auto bg-white my-10 shadow-lg rounded-md ">
+            <div class="basis-1/2 md:basis-1/3 flex flex-row">
+
+                <img src="all_photos/news-1.jpeg" class=" rounded-md xl:shadow-lg object-contain lg:object-contain  xl:shadow-blue-400  md:my-5 md:mx-2 w-full h-auto " alt="" srcset="">
+            </div>
+            <div class="basis-1/2 md:basis-2/3 pl-10 overflow-hidden ">
+                <div class="flex flex-col p-8 mt-20 ">
+                    <div class="flex w-full flex-row items-center justify-start rounded-full pt-4 ">
+                        <div class="flex  md:flex-row items-center w-[10rem] rounded-full shadow-md  shadow-red-400 bg-red-300 p-[.52rem]">
+                            <div
+                                class="  flex justify-center rounded-full w-[1.5rem] h-[1.5rem] bg-red-600 p-[1.4rem]  items-center text-white   text-center">
+                                24</div>
+                            <div class=" ml-2 text-red-600 ">MAR 2023</div>
+                        </div>
+                    </div>
+                    <h5 class="my-8 text-xl  text-black  font-bold  ">National Conference on Macromolecules and Nanotechnology</h5>
+                    <p class="mb-4 text-base text-black   "> The National Conference is dedicated to the discovery, development and application of Applied Sciences and Technology in a wide range of academics and professional areas of research in a learning environment that promotes creativity, innovation and critical thinking amongst the students and research. The conference is a premier of Macromolecules and Nanotechnology in Applied Sciences, Pharmacy, and an interdisciplinary area of specialization. The conference focuses on research to enhance the development in various important areas for the generation of ideas, concepts and technology and keeps development for society.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="md:sticky bottom-[2.5rem] z-[85] mb-10">
+          <div class="flex flex-col max-w-3/4 md:flex-row md:max-w-4/5 mx-auto bg-white my-10 shadow-lg rounded-md ">
+            <div class="basis-1/2 md:basis-1/3 flex flex-row">
+
+                <img src="all_photos/news-8 (3).jpg" class=" rounded-md shadow-lg object-cover md:object-fit  shadow-green-400  md:my-5 md:mx-2 w-full h-auto " alt="" srcset="">
+            </div>
+            <div class="basis-1/2 md:basis-2/3 pl-10 overflow-hidden ">
+                <div class="flex flex-col p-8">
+                    <div class="flex w-full flex-row items-center justify-start rounded-full pt-4 ">
+                        <div class="flex  md:flex-row items-center w-[10rem] rounded-full shadow-md  shadow-red-400 bg-red-300 p-[.52rem]">
+                            <div
+                                class="  flex justify-center rounded-full w-[1.5rem] h-[1.5rem] bg-red-600 p-[1.4rem]  items-center text-white   text-center">
+                                30</div>
+                            <div class=" ml-2 text-red-600 ">DEC 2022</div>
+                        </div>
+                    </div>
+                    <h5 class="my-8 text-xl  text-black  font-bold"> LJ Polytechnic Sarahna 2022</h5>
+                    <p class="mb-4 text-base text-black  ">The panel WOMEN IN BUSINESS runs with the objective of understanding the opportunities and challenges that women entrepreneurs face in business. The real art of entrepreneurship is much more than simply having an idea, with 90% of the work in implementation. Here we will talk about NARI Shakti in business  <br>
+                        Register on the link Below: 
+                        <a href=" https://forms.gle/H2vbQ1yRWNpkt3JC6" class="hover:text-blue-500  "> https://forms.gle/H2vbQ1yRWNpkt3JC6</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="md:sticky bottom-[2.5rem] z-[80] mb-10">
+          <div class="flex flex-col max-w-3/4 md:flex-row md:max-w-4/5 mx-auto bg-white my-10 shadow-lg rounded-md ">
+            <div class="basis-1/2 md:basis-1/3 flex flex-row">
+
+                <img src="all_photos/news-2.jpeg" class=" rounded-md shadow-lg object-cover md:object-fit  shadow-purple-400  md:my-5 md:mx-2 w-full h-auto " alt="" srcset="">
+            </div>
+            <div class="basis-1/2 md:basis-2/3 pl-10 overflow-hidden ">
+                <div class="flex flex-col p-8">
+                    <div class="flex w-full flex-row items-center justify-start rounded-full pt-4 ">
+                        <div class="flex  md:flex-row items-center w-[10rem] rounded-full shadow-md  shadow-red-400 bg-red-300 p-[.52rem]">
+                            <div
+                                class="  flex justify-center rounded-full w-[1.5rem] h-[1.5rem] bg-red-600 p-[1.4rem]  items-center text-white   text-center">
+                                20</div>
+                            <div class=" ml-2 text-red-600 ">FEB 2023</div>
+                        </div>
+                    </div>
+                    <h5 class="my-8 text-xl  text-black  font-bold">Women Investing in Women2.0</h5>
+                    <p class="mb-4 text-base text-black  ">The panel WOMEN IN BUSINESS runs with the objective of understanding the opportunities and challenges that women entrepreneurs face in business. The real art of entrepreneurship is much more than simply having an idea, with 90% of the work in implementation. Here we will talk about NARI Shakti in business  <br>
+                        Register on the link Below: 
+                        <a href=" https://forms.gle/H2vbQ1yRWNpkt3JC6" class="hover:text-blue-500  "> https://forms.gle/H2vbQ1yRWNpkt3JC6</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="md:sticky bottom-[2.5rem] z-[75] mb-10">
+          <div class="flex flex-row max-w-3/4 md:flex-row md:max-w-4/5 mx-auto bg-white my-10 shadow-lg rounded-md ">
+            <div class="basis-1/2 md:basis-1/3 flex flex-row">
+
+                <img src="all_photos/news-4.jpeg" class=" rounded-md shadow-lg object-cover md:object-fit  shadow-black  md:my-5 md:mx-2 w-full h-auto " alt="" srcset="">
+            </div>
+            <div class="basis-1/2 md:basis-2/3 pl-10 overflow-hidden ">
+                <div class="flex flex-col p-8">
+                    <div class="flex w-full flex-row items-center justify-start rounded-full pt-4 ">
+                        <div class="flex  md:flex-row items-center w-[10rem] rounded-full shadow-md  shadow-red-400 bg-red-300 p-[.52rem]">
+                            <div
+                                class="  flex justify-center rounded-full w-[1.5rem] h-[1.5rem] bg-red-600 p-[1.4rem]  items-center text-white   text-center">
+                                27</div>
+                            <div class=" ml-2 text-red-600 ">JAN 2023</div>
+                        </div>
+                    </div>
+                    <h5 class="my-8 text-xl  text-black  font-bold">LJ Cup</h5>
+                    <p class="mb-4 text-base text-black  ">The panel WOMEN IN BUSINESS runs with the objective of understanding the opportunities and challenges that women entrepreneurs face in business. The real art of entrepreneurship is much more than simply having an idea, with 90% of the work in implementation. Here we will talk about NARI Shakti in business  <br>
+                        Register on the link Below: 
+                        <a href=" https://forms.gle/H2vbQ1yRWNpkt3JC6" class="hover:text-blue-500  "> https://forms.gle/H2vbQ1yRWNpkt3JC6</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="md:sticky bottom-[2.5rem] z-[70] mb-10">
+          <div class="flex flex-col max-w-3/4 md:flex-row md:max-w-4/5 mx-auto bg-white my-10 shadow-lg rounded-md ">
+            <div class="basis-1/2 md:basis-1/3 flex flex-row">
+
+                <img src="all_photos/Shark-Teens-Cover-2-300x300.jpg" class=" rounded-md shadow-lg object-cover md:object-fit  shadow-gray-900  md:my-5 md:mx-2 w-full h-auto " alt="" srcset="">
+            </div>
+            <div class="basis-1/2 md:basis-2/3 pl-10 overflow-hidden ">
+                <div class="flex flex-col p-8">
+                    <div class="flex w-full flex-row items-center justify-start rounded-full pt-4 ">
+                        <div class="flex  md:flex-row items-center w-[10rem] rounded-full shadow-md  shadow-red-400 bg-red-300 p-[.52rem]">
+                            <div
+                                class="  flex justify-center rounded-full w-[1.5rem] h-[1.5rem] bg-red-600 p-[1.4rem]  items-center text-white   text-center">
+                                15</div>
+                            <div class=" ml-2 text-red-600 ">APR 2023</div>
+                        </div>
+                    </div>
+                    <h5 class="my-8 text-xl  text-black  font-bold">SHARK TEENS</h5>
+                    <p class="mb-4 text-base text-black  ">The panel runs with the objective of understanding the opportunities and challenges that  entrepreneurs face in business. The real art of entrepreneurship is much more than simply having an idea, with 90% of the work in implementation. Here we will talk about business  <br>
+                        Register on the link Below: 
+                        <a href=" https://forms.gle/H2vbQ1yRWNpkt3JC6" class="hover:text-blue-500  "> https://forms.gle/H2vbQ1yRWNpkt3JC6</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="md:sticky bottom-[2.5rem] z-[60] mb-10">
+          <div class="flex flex-col max-w-3/4 md:flex-row md:max-w-4/5 mx-auto bg-white my-10 shadow-lg rounded-md ">
+            <div class="basis-1/2 md:basis-1/3 flex flex-row">
+
+                <img src="all_photos/news-10.png" class=" rounded-md shadow-lg object-cover md:object-fit  shadow-pink-800  md:my-5 md:mx-2 w-full h-auto " alt="" srcset="">
+            </div>
+            <div class="basis-1/2 md:basis-2/3 pl-10 overflow-hidden ">
+                <div class="flex flex-col p-8">
+                    <div class="flex w-full flex-row items-center justify-start rounded-full pt-4 ">
+                        <div class="flex  md:flex-row items-center w-[10rem] rounded-full shadow-md  shadow-red-400 bg-red-300 p-[.52rem]">
+                            <div
+                                class="  flex justify-center rounded-full w-[1.5rem] h-[1.5rem] bg-red-600 p-[1.4rem]  items-center text-white   text-center">
+                                30</div>
+                            <div class=" ml-2 text-red-600 ">JUN 2022</div>
+                        </div>
+                    </div>
+                    <h5 class="my-8 text-xl  text-black  font-bold"> LJ KALANJALI</h5>
+                    <p class="mb-4 text-base text-black  ">The panel WOMEN IN BUSINESS runs with the objective of understanding the opportunities and challenges that women entrepreneurs face in business. The real art of entrepreneurship is much more than simply having an idea, with 90% of the work in implementation. Here we will talk about NARI Shakti in business  <br>
+                        Register on the link Below: 
+                        <a href=" https://forms.gle/H2vbQ1yRWNpkt3JC6" class="hover:text-blue-500  "> https://forms.gle/H2vbQ1yRWNpkt3JC6</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="md:sticky bottom-[2.5rem] z-[55] mb-10">
+          <div class="flex flex-col max-w-3/4 md:flex-row md:max-w-4/5 mx-auto bg-white my-10 shadow-lg rounded-md ">
+            <div class="basis-1/2 md:basis-1/3 flex flex-row">
+
+                <img src="all_photos/news-5.jpeg" class=" rounded-md shadow-lg object-cover md:object-fit  shadow-yellow-400  md:my-5 md:mx-2 w-full h-auto " alt="" srcset="">
+            </div>
+            <div class="basis-1/2 md:basis-2/3 pl-10 overflow-hidden ">
+                <div class="flex flex-col p-8">
+                    <div class="flex w-full flex-row items-center justify-start rounded-full pt-4 ">
+                        <div class="flex  md:flex-row items-center w-[10rem] rounded-full shadow-md  shadow-red-400 bg-red-300 p-[.52rem]">
+                            <div
+                                class="  flex justify-center rounded-full w-[1.5rem] h-[1.5rem] bg-red-600 p-[1.4rem]  items-center text-white   text-center">
+                                30</div>
+                            <div class=" ml-2 text-red-600 ">DEC 2022</div>
+                        </div>
+                    </div>
+                    <h5 class="my-8 text-xl  text-black  font-bold"> LJ Polytechnic Sarahna 2022</h5>
+                    <p class="mb-4 text-base text-black  ">The panel WOMEN IN BUSINESS runs with the objective of understanding the opportunities and challenges that women entrepreneurs face in business. The real art of entrepreneurship is much more than simply having an idea, with 90% of the work in implementation. Here we will talk about NARI Shakti in business  <br>
+                        Register on the link Below: 
+                        <a href=" https://forms.gle/H2vbQ1yRWNpkt3JC6" class="hover:text-blue-500  "> https://forms.gle/H2vbQ1yRWNpkt3JC6</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="md:sticky bottom-[2.5rem] z-[50] mb-10">
+          <div class="flex flex-col max-w-3/4 md:flex-row md:max-w-4/5 mx-auto bg-white my-10 shadow-lg rounded-md ">
+            <div class="basis-1/2 md:basis-1/3 flex flex-row">
+
+                <img src="all_photos/news-7 (2).png" class=" rounded-md shadow-lg object-cover md:object-fit  shadow-blue-700  md:my-5 md:mx-2 w-full h-auto " alt="" srcset="">
+            </div>
+            <div class="basis-1/2 md:basis-2/3 pl-10 overflow-hidden ">
+                <div class="flex flex-col p-8">
+                    <div class="flex w-full flex-row items-center justify-start rounded-full pt-4 ">
+                        <div class="flex  md:flex-row items-center w-[10rem] rounded-full shadow-md  shadow-red-400 bg-red-300 p-[.52rem]">
+                            <div
+                                class="  flex justify-center rounded-full w-[1.5rem] h-[1.5rem] bg-red-600 p-[1.4rem]  items-center text-white   text-center">
+                                14</div>
+                            <div class=" ml-2 text-red-600 ">DEC 2022</div>
+                        </div>
+                    </div>
+                    <h5 class="my-8 text-xl  text-black  font-bold"> LJ Polytechnic Sarahna 2022</h5>
+                    <p class="mb-4 text-base text-black  ">The panel WOMEN IN BUSINESS runs with the objective of understanding the opportunities and challenges that women entrepreneurs face in business. The real art of entrepreneurship is much more than simply having an idea, with 90% of the work in implementation. Here we will talk about NARI Shakti in business  <br>
+                        Register on the link Below: 
+                        <a href=" https://forms.gle/H2vbQ1yRWNpkt3JC6" class="hover:text-blue-500  "> https://forms.gle/H2vbQ1yRWNpkt3JC6</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+       
+      </div>
+
+    </div>
+<!-- news/event -->
+    {{>footer}}
+</body>
+</html>

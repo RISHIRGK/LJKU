@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+ 
+         <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="">
+ {{>navbar}}
+    <!-- <div class="grid grid-cols-2 gap-4 mt-10">
+      <div class="bg-white text-black rounded-lg shadow-lg p-6  transition-all duration-500 rounded  shadow-lg ring-1 ring-black ">
+        <h2 class="text-xl font-medium mb-4">UG Courses</h2>
+        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet purus ac tellus fringilla lobortis.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg p-6  hover:shadow-black transition-all duration-500 rounded   shadow-lg ring-1 ring-black ">
+        <h2 class="text-xl font-medium mb-4">PG Courses</h2>
+        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet purus ac tellus fringilla lobortis.</p>
+      </div>
+    </div> -->
+    
+    <div class="flex flex-wrap p-3 justify-center max-w-screen-2xl mx-auto mt-10 gap-5">
+      <div class="max-w-xs hover:shadow-black transition-all duration-500 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="all_photos/a.png" alt="University Image" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">
+            ENGINEERING
+          </div>
+          <p class="text-gray-700 text-base">Card description goes here.</p>
+        </div>
+        <div class="px-8 py-6 flex justify-end">
+          <a
+          href="/engineering"
+            class="rounded-full relative px-4 py-2 hover:ring-1 ring-black transition-all"
+            >Know more &#8594;</a
+          >
+        </div>
+      </div>
+      <div class="max-w-xs hover:shadow-black transition-all duration-500 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="all_photos/lj-law.jpeg" alt="University Image" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">LAW DEPARTMENT</div>
+          <p class="text-gray-700 text-base">Card description goes here.</p>
+        </div>
+        <div class="px-8 py-6 flex justify-end">
+          <a href="/law"
+            class="rounded-full relative px-4 py-2 hover:ring-1 ring-black transition-all"
+            >Know more &#8594;</a
+          >
+        </div>
+      </div>
+      <div class="max-w-xs hover:shadow-black transition-all duration-500 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="all_photos/lj-commerce.jpeg" alt="University Image" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">COMMERCE DEPARTMENT</div>
+          <p class="text-gray-700 text-base">Card description goes here.</p>
+        </div>
+        <div class="px-8 py-6 flex justify-end">
+          <a href="/commerce"
+            class="rounded-full relative px-4 py-2 hover:ring-1 ring-black transition-all"
+            >Know more &#8594;</a
+          >
+        </div>
+      </div>
+      <div class="max-w-xs hover:shadow-black transition-all duration-500 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="all_photos/lj-pharmecy(21).jpeg" alt="University Image" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">PHARMACY DEPARTMENT</div>
+          <p class="text-gray-700 text-base">Card description goes here.</p>
+        </div>
+        <div class="px-8 py-6 flex justify-end">
+          <a
+          href="/pharmacy"
+            class="rounded-full relative px-4 py-2 hover:ring-1 ring-black transition-all"
+            >Know more &#8594;</a
+          >
+        </div>
+      </div>
+      <div class="max-w-xs hover:shadow-black transition-all duration-500 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="all_photos/lj-computer-applications.jpeg" alt="University Image" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">COMPUTER APPLICATION DEPARTMENT</div>
+          <p class="text-gray-700 text-base">Card description goes here.</p>
+        </div>
+        <div class="px-8 py-6 flex justify-end">
+          <a
+          href="/computer_applications"
+            class="rounded-full relative px-4 py-2 hover:ring-1 ring-black transition-all"
+            >Know more &#8594;</a
+          >
+        </div>
+      </div>
+      <div class="max-w-xs hover:shadow-black transition-all duration-500 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="all_photos/lj-management.jpeg" alt="University Image" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">MANAGEMENT DEPARTMENT</div>
+          <p class="text-gray-700 text-base">Card description goes here.</p>
+        </div>
+        <div class="px-8 py-6 flex justify-end">
+          <a
+          href="/management"
+            class="rounded-full relative px-4 py-2 hover:ring-1 ring-black transition-all"
+            >Know more &#8594;</a
+          >
+        </div>
+      </div>
+      <div class="max-w-xs hover:shadow-black transition-all duration-500 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="all_photos/lj-architecture.jpeg" alt="University Image" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">ARCHITECTURE DEPARTMENT</div>
+          <p class="text-gray-700 text-base">Card description goes here.</p>
+        </div>
+        <div class="px-8 py-6 flex justify-end">
+          <a href="/architecture"
+            class="rounded-full relative px-4 py-2 hover:ring-1 ring-black transition-all"
+            >Know more &#8594;</a
+          >
+        </div>
+      </div>
+      <div class="max-w-xs hover:shadow-black transition-all duration-500 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="all_photos/lj_polytechinique.jpeg" alt="University Image" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">POLYTECHINIQUE DEPARTMENT</div>
+          <p class="text-gray-700 text-base">Card description goes here.</p>
+        </div>
+        <div class="px-8 py-6 flex justify-end">
+          <a
+          href="/polytechinique"
+            class="rounded-full relative px-4 py-2 hover:ring-1 ring-black transition-all"
+            >Know more &#8594;</a
+          >
+        </div>
+      </div>
+  
+    </div>
+
+
+
+    
+  <!-- FOOTER -->
+ {{>footer}}
+  </body>
+</html>

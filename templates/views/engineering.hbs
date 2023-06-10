@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+</head>
+
+<body>
+  {{>navbar}}
+   
+    <div class="relative max-w-screen-2xl mx-auto mb-2">
+        <img src="all_photos/a.png" class="min-w-full p-2 rounded-lg blur-[4px]" alt="img not show,some error!" />
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1 class="text-white text-[clamp(.1rem,.1rem+2.1vw,4rem)] font-bold tracking-[0.5em] 3">
+                <span class="text-red-700">ENGINEERING</span> DEPARTMENT
+            </h1>
+        </div>
+    </div>
+    <!-- hr -->
+    <hr class="bg-black max-w-screen-2xl mx-auto h-1 mt-10" >
+
+
+    <div class="font-serif max-w-screen-2xl mx-auto grid grid-cols-2 mt-2 mb-10 text-justify bg-[#ffffff]">
+        <div class="  my-2 mx-4 p-3">
+            <p>
+                Lok Jakruti Kendra University (LJKU) started its
+                academics in 2007 under the aegis of Lok Jagruti Kendra (LJK) to run
+                Under-Graduate Degree Engineering and Post-Graduate Degree Engineering
+                Programmes. A planned, disciplined environment and beautiful green
+                landscaping accompanied by the sweet sound of birds along with an
+                ebullient hunt for knowledge by the young aspirants provides a unique
+                atmosphere in the LJ Campus. The environment inspires a learner to
+                seek the quest for knowledge and develop their skillset in any
+                preferred areas.
+            </p>
+            <p>
+                LJIET is committed to providing value-based quality education with
+                professional satisfaction. It has created a pleasant, professional
+                learning environment with state-of-the-art facilities to meet the
+                world-class standards to provide an excellent education.
+            </p>
+            <div class="mt-2 p-3">
+              <ul class="list-disc list-inside">
+                  <li>
+                      Technology-enabled classrooms, laboratories, workshops, tutorial
+                      rooms, seminar halls, auditoriums, open-air theatre, library and
+                      computer centres connected with a fiber-optic network are available
+                      for students overall development.
+                  </li>
+      
+                  <li>
+                      Objective and transparent institute management mechanism for
+                      maintaining an impeccable student support environment.
+                  </li>
+      
+                  <li>
+                      Linked with institutions and organizations globally provides prospects
+                      of employability and skill-based learning.
+                  </li>
+      
+                  <li>
+                      Well-qualified, experienced faculties train the participants with
+                      easy-to-use, step-by-step training.
+                  </li>
+      
+                  <li>
+                      Guest speakers from the industry with relevant experiences also take
+                      part in the training of the students.
+                  </li>
+      
+                  <li>
+                      Apart from academics, LJIET also focuses on communication/presentation
+                      skills, personality development and student's etiquette for better
+                      employment.
+                  </li>
+              </ul>
+            </div>
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center w-1/3">
+                <img src="images/eng-1.jpg" class="object-cover w-40 rounded-full" alt="sorry img not found">
+                <div class="text-center mt-2">
+                  Excellence performance award in SSIP activities 2019
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-1/3">
+                <img src="images/eng-3.jpg" class="object-cover w-40 rounded-full" alt="sorry img not found">
+                <div class="text-center mt-2">
+                  Excellence in startup and Students Innovation Practices in 2018 
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-1/3">
+                <img src="images/eng-2.jpg" class="object-cover w-40 rounded-full" alt="sorry img not found">
+                <div class="text-center mt-2">
+                  Best startup project awarded in SSIP policy 2019
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div>
+            <h1 class="text-center font-bold">Inquiry Form</h1>
+            <form class="w-full ring-1 ring-black rounded-lg p-5 hover:shadow-xl  max-w-lg mx-auto">
+              
+              <div class="mb-4 ">
+                <label class="block text-gray-700 font-bold mb-2" for="full-name">
+                  Full Name
+                </label>
+                <input
+                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="full-name"
+                  type="text"
+                  placeholder="John Doe"
+                >
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="email">
+                  Email Address
+                </label>
+                <input
+                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="email"
+                  type="email"
+                  placeholder="johndoe@example.com"
+                >
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="phone">
+                  Phone Number
+                </label>
+                <input
+                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="phone"
+                  type="tel"
+                  placeholder="123-456-7890"
+                >
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="program">
+                  Program of Interest
+                </label>
+                <select
+                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="program"
+                >
+                  <option>Computer Science</option>
+                  <option>Business Administration</option>
+                  <option>Psychology</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="message">
+                  Message
+                </label>
+                <textarea
+                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="message"
+                  rows="5"
+                  placeholder="Enter your message here."
+                ></textarea>
+              </div>
+              <div class="flex items-center justify-between">
+                <button
+                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+            
+          </div>
+          
+    </div>
+    <hr class="bg-black max-w-screen-2xl mx-auto h-1 mb-10" >
+
+    <div class="scope max-w-screen-2xl mx-auto font-bold text-center mb-1 bg-black text-white">
+        SCOPE :
+    </div>
+
+    <p class="max-w-screen-2xl mx-auto text-black">
+        The Under-Graduate Degree Engineering and Post-Graduate Degree Engineering
+        courses are designed in a way to make students capable of performing
+        engineering tasks as per the current industry and market requirement.
+        Engineering as a career is the application of science to develop, design,
+        maintain, research and improve structures, machines, devices, systems and
+        processes. From designing needle to aircraft, software to smartphones,
+        chip to supercomputer you name it, every product or technology developed
+        in the field of Science & Technology, covers one or the other aspect of
+        Engineering.
+    </p>
+
+    <br /><br />
+    <div class="lists max-w-screen-2xl mx-auto flex flex-col-reverse md:flex-row">
+        <div class="left w-[50%]">
+            <h3 class="bg-black text-white">UNDER GRADUATION</h3>
+            <ul class="list-disc list-inside md:list-outline">
+                <!-- instead of list disk use other symbol-->
+                <li>Artificial Intelligence(AI) & Data Science</li>
+                <!--sirf jo rakhne he vo rahene dena baki remove karde-->
+                <li>Artificial Intelligence & Machine Learning</li>
+                <li>Automobile Engineering</li>
+                <li>Chemical Engineering</li>
+                <li>Civil Engineering</li>
+                <li>Computer engineering</li>
+                <li>Computer Science & Design</li>
+                <li>Electronics & Communication Engineering</li>
+                <li>Information Technology</li>
+                <li>Mechanical Engineering</li>
+                <li>Robotics & Artificial Intelligence</li>
+            </ul>
+        </div>
+
+        <div class="right w-[50%]">
+            <h3 class="bg-black text-white">POST GRADUATION</h3>
+            <ul class="list-disc list-inside md:list-outline">
+                <!-- instead of list disk use other symbol-->
+                <li>Civil(Structural Engineering)</li>
+                <!--sirf jo rakhne he vo rahene dena baki remove karde-->
+                <li>Computer(Software Engineering)</li>
+                <li>EC(Communicatin System Engineering)</li>
+                <li>Information Technology</li>
+                <li>Mechanical Engineering(thermal)</li>
+            </ul>
+        </div>
+    </div>
+    <hr class="bg-black max-w-screen-2xl mx-auto h-1 mt-10" >
+   
+  <!-- FOOTER -->
+ {{>footer}}
+</body>
+
+</html>
