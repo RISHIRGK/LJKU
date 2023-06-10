@@ -80,6 +80,9 @@ app.get("/commerce", (req, res) => {
 app.get("/developers", (req, res) => {
   res.render("developers");
 });
+app.get("*", (req, res) => {
+  res.render("err",{src:"./images/really.gif"});
+});
 
 
 app.listen(PORT,(err)=>
