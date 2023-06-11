@@ -963,6 +963,10 @@ video {
   width: 100%;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .min-w-\[120px\] {
   min-width: 120px;
 }
