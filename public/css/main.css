@@ -1394,6 +1394,26 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[\.4rem\] {
+  font-size: .4rem;
+}
+
+.text-\[\.9rem\] {
+  font-size: .9rem;
+}
+
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
+.text-\[3rem\] {
+  font-size: 3rem;
+}
+
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
+}
+
 .font-\[clamp\(800\2c 800\+70\2c 900\)\] {
   font-weight: clamp(800,800 + 70,900);
 }
@@ -1473,6 +1493,14 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\.rem\] {
+  color: .rem;
 }
 
 .opacity-\[\.3\] {
