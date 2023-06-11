@@ -790,6 +790,30 @@ video {
   aspect-ratio: 3/2;
 }
 
+.aspect-\[\] {
+  aspect-ratio: ;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-\[2\/3\] {
+  aspect-ratio: 2/3;
+}
+
+.aspect-\[1\/2\] {
+  aspect-ratio: 1/2;
+}
+
+.aspect-\[2\/2\] {
+  aspect-ratio: 2/2;
+}
+
+.aspect-\[3\/4\] {
+  aspect-ratio: 3/4;
+}
+
 .h-1 {
   height: 0.25rem;
 }
@@ -1877,10 +1901,23 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:my-\[10rem\] {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
   .lg\:scale-\[1\.6\] {
     --tw-scale-x: 1.6;
     --tw-scale-y: 1.6;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 
   .lg\:object-contain {
