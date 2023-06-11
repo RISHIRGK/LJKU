@@ -604,6 +604,14 @@ video {
   top: 35%;
 }
 
+.-top-20 {
+  top: -5rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1030,6 +1038,10 @@ video {
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-\[18rem\] {
+  max-width: 18rem;
 }
 
 .basis-1\/2 {
