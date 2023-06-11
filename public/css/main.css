@@ -1333,11 +1333,6 @@ video {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1392,26 +1387,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[\.4rem\] {
-  font-size: .4rem;
-}
-
-.text-\[\.9rem\] {
-  font-size: .9rem;
-}
-
-.text-\[1rem\] {
-  font-size: 1rem;
-}
-
-.text-\[3rem\] {
-  font-size: 3rem;
-}
-
-.text-\[1\.5rem\] {
-  font-size: 1.5rem;
 }
 
 .font-\[clamp\(800\2c 800\+70\2c 900\)\] {
@@ -1493,14 +1468,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[\.rem\] {
-  color: .rem;
 }
 
 .opacity-\[\.3\] {
@@ -1867,6 +1834,11 @@ video {
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-\[1\.2rem\] {
