@@ -854,6 +854,10 @@ video {
   height: 100vh;
 }
 
+.h-\[30\%\] {
+  height: 30%;
+}
+
 .max-h-\[10vh\] {
   max-height: 10vh;
 }
@@ -965,6 +969,10 @@ video {
 
 .w-auto {
   width: auto;
+}
+
+.w-\[30\%\] {
+  width: 30%;
 }
 
 .min-w-\[120px\] {
@@ -1797,6 +1805,10 @@ video {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-\[70\%\] {
+    width: 70%;
   }
 
   .md\:basis-1\/3 {
