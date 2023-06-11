@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    <div class="max-w-screen-2xl bg-gray-100 p-8 box-border gap-8 flex flex-col mx-auto h-[100vh]">
+        <p class="font-bold  "><span class="text-red-500">M</span>ON<span class="text-red-500">G</span>O <span class="text-red-500">C</span>ONNECT<span class="text-red-500">IO</span>N U<span class="text-red-500">R</span>I: <span class="bg-gray-300 font-semibold py-2 px-4 rounded-xl "> mongodb+srv://ljku:ljku@cluster0.w4r2xew.mongodb.net/?retryWrites=true&w=majority/rankData </span> </p>
+        <p class="font-bold" > 
+         <span class="text-red-500">C</span><span class="text-red-500">O</span>LLECTI<span class="text-red-500">O</span>N <span class="text-red-500">N</span>A<span class="text-red-500">M</span>E:<span class="bg-gray-300 font-semibold py-2 px-4 rounded-xl ">  t1   </span> 
+        </p>
+        <div>
+        <p class="font-bold">
+            S<span class="text-red-500">C</span>HE<span class="text-red-500">M</span>A:
+        </p>
+        <pre class="bg-gray-300 rounded-xl">
+            {
+        DEPARTMENT: String,
+        BRANCH: String,
+        ROLL_NO: Number,
+        ENROLL_NO: Number,
+        DIV: String,
+        STUDENT_NAME:String,
+        MENTOR: String,
+        FSD2_T1: Number,
+        DM_T1: Number,
+        COA_T1: Number,
+        FCSP2_T1: Number,
+        TOC_T1: Number,
+        TOTAL_T1: Number,
+        RANK: Number   
+            }
+        </pre>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+</html>
