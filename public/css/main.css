@@ -1892,6 +1892,26 @@ video {
   .md\:text-\[3\.3rem\] {
     font-size: 3.3rem;
   }
+
+  .md\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .md\:text-\[1\.8rem\] {
+    font-size: 1.8rem;
+  }
+
+  .md\:text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
+
+  .md\:text-\[1\.3rem\] {
+    font-size: 1.3rem;
+  }
+
+  .md\:text-\[1\.rem\] {
+    color: 1.rem;
+  }
 }
 
 @media (min-width: 1024px) {
