@@ -1377,6 +1377,10 @@ video {
   font-size: 0.8rem;
 }
 
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
 .text-\[2\.4rem\] {
   font-size: 2.4rem;
 }
@@ -1414,6 +1418,14 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[\.1rem\] {
+  font-size: .1rem;
+}
+
+.text-\[\.8rem\] {
+  font-size: .8rem;
 }
 
 .font-\[clamp\(800\2c 800\+70\2c 900\)\] {
