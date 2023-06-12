@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "convert": "npx tailwindcss -i ./public/css/test.css -o ./public/css/main.css --watch"
+    "convert": "npx tailwindcss -i ./public/css/test.css -o ./public/css/main.css --watch",
+    "build":"echo success",
+    "start":"node index.js"
   },
   "keywords": [],
   "author": "",
