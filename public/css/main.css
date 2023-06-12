@@ -1412,6 +1412,26 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
+.text-\[1\.2rem\] {
+  font-size: 1.2rem;
+}
+
+.text-\[\.5rem\] {
+  font-size: .5rem;
+}
+
+.text-\[\.8rem\] {
+  font-size: .8rem;
+}
+
+.text-\[\.7rem\] {
+  font-size: .7rem;
+}
+
 .font-\[clamp\(800\2c 800\+70\2c 900\)\] {
   font-weight: clamp(800,800 + 70,900);
 }
@@ -1496,6 +1516,14 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\.rem\] {
+  color: .rem;
 }
 
 .opacity-\[\.3\] {
@@ -1855,6 +1883,10 @@ video {
     padding: 1rem;
   }
 
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1875,6 +1907,22 @@ video {
 
   .md\:text-\[3\.3rem\] {
     font-size: 3.3rem;
+  }
+
+  .md\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .md\:text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
+
+  .md\:text-\[\] {
+    color: ;
+  }
+
+  .md\:text-\[2rm\] {
+    color: 2rm;
   }
 }
 
