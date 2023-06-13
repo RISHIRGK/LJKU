@@ -1838,8 +1838,16 @@ video {
     width: 20%;
   }
 
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
   .md\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .md\:w-\[60\%\] {
+    width: 60%;
   }
 
   .md\:w-\[80\%\] {
@@ -1848,6 +1856,10 @@ video {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-\[0\%\] {
+    width: 0%;
   }
 
   .md\:basis-1\/3 {
