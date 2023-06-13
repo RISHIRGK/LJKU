@@ -1365,6 +1365,10 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[\.8rem\] {
+  font-size: .8rem;
+}
+
 .text-\[0\.6rem\] {
   font-size: 0.6rem;
 }
@@ -1375,10 +1379,6 @@ video {
 
 .text-\[0\.8rem\] {
   font-size: 0.8rem;
-}
-
-.text-\[1rem\] {
-  font-size: 1rem;
 }
 
 .text-\[2\.4rem\] {
@@ -1418,14 +1418,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[\.1rem\] {
-  font-size: .1rem;
-}
-
-.text-\[\.8rem\] {
-  font-size: .8rem;
 }
 
 .font-\[clamp\(800\2c 800\+70\2c 900\)\] {
@@ -1645,12 +1637,31 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+@keyframes text_change_anim {
+  from{
+    color: #ef4444;
+  }
+
+  to{
+    color: #000000;
+  }
+}
+
+#goto_developer_page
+{
+  animation: text_change_anim 1s infinite ease-in-out ;
 }
 
 .visited\:text-\[\#adaaaa\]:visited {
@@ -1889,28 +1900,12 @@ video {
     font-size: 1.2rem;
   }
 
-  .md\:text-\[3\.3rem\] {
-    font-size: 3.3rem;
-  }
-
-  .md\:text-\[2rem\] {
-    font-size: 2rem;
-  }
-
-  .md\:text-\[1\.8rem\] {
-    font-size: 1.8rem;
-  }
-
-  .md\:text-\[1\.5rem\] {
-    font-size: 1.5rem;
-  }
-
   .md\:text-\[1\.3rem\] {
     font-size: 1.3rem;
   }
 
-  .md\:text-\[1\.rem\] {
-    color: 1.rem;
+  .md\:text-\[3\.3rem\] {
+    font-size: 3.3rem;
   }
 }
 
