@@ -89,7 +89,7 @@ app.get("*", (req, res) => {
 
 const start=async (uri)=>{
   try {
-    await mongo_connect(uri).then((err)=>{console.log("connected to rank Data")})
+    await mongo_connect(uri).then(()=>{console.log("connected to rank Data")})
     app.listen(PORT,(err)=>
 {
     if(err)
@@ -107,3 +107,4 @@ const start=async (uri)=>{
   }
 
 }
+start(process.env.MONGO_URI)
