@@ -1,5 +1,5 @@
 require('dotenv').config()
-const studentsData=require("./src/db")
+const {mongo_connect,studentsData}=require("./src/db")
 const path = require("path");
 const express=require("express")
 const mongoose=require("mongoose")
@@ -87,8 +87,10 @@ app.get("*", (req, res) => {
   res.render("err",{src:"./images/really.gif"});
 });
 
-
-app.listen(PORT,(err)=>
+const start=async (uri)=>{
+  try {
+    await mongo_connect(uri).then((err)=>{console.log("connected to rank Data")})
+    app.listen(PORT,(err)=>
 {
     if(err)
     {
@@ -99,3 +101,9 @@ app.listen(PORT,(err)=>
 
     }
 })
+  } catch (error) {
+    console.log(err)
+    
+  }
+
+}

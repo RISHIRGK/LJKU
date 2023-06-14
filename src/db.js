@@ -1,12 +1,11 @@
 require('dotenv').config()
 const mongoose=require("mongoose")
-mongoose.connect(process.env.MONGO_URI).then(()=>
+const mongo_connect=(mongo_uri)=>
 {
-    console.log("connected to the rankData")
-}).catch((err)=>
-{
-    console.log(`error while connecting to the rankData the error is :-${err}`)
-})
+
+    return mongoose.connect(mongo_uri)
+}
+
 
 const studentsData=new mongoose.model("t1",new mongoose.Schema({
     
@@ -26,7 +25,7 @@ const studentsData=new mongoose.model("t1",new mongoose.Schema({
         RANK: Number
       
 }))
-module.exports=studentsData
+module.exports={mongo_connect,studentsData}
 // var data=async()=>
 // {
 //     var b=await studentData.find({DIV:"C1"}).sort({RANK:1})
